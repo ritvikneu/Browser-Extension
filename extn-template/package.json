@@ -1,0 +1,52 @@
+{
+  "name": "extn-template",
+  "displayName": "Extn template",
+  "version": "0.0.1",
+  "description": "An extension to create extensions",
+  "author": "Ritvik Paramkusham",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "test": "plasmo test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@google-cloud/speech": "^6.1.0",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.15.3",
+    "Edit": "link:@mui/icons-material/Edit",
+    "googleapis": "^129.0.0",
+    "plasmo": "0.84.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.251",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs",
+      "clipboardWrite",
+      "clipboardRead",
+      "unlimitedStorage",
+      "identity",
+      "identity.email",
+      "identity.profile",
+      "identity.oauth2",
+      "identity.refresh",
+      "identity.launchWebAuthFlow"
+    ]
+  }
+}
